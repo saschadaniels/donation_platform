@@ -1,0 +1,16 @@
+
+<%= simple_form_for(@item) do |f| %>
+  <%= errors_for(@item) %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :required %>
+    <%= f.input :collected %>
+    <%= f.input :project_id %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: 'btn-primary' %>
+  </div>
+<% end %>

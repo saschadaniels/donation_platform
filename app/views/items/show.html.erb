@@ -1,0 +1,16 @@
+<h1>Items</h1>
+
+<dl>
+  <dt>Name:</dt>
+  <dd><%= @item.name %></dd>
+  <dt>Description:</dt>
+  <dd><%= @item.description %></dd>
+  <dt>Required:</dt>
+  <dd><%= @item.required %></dd>
+  <dt>Collected:</dt>
+  <dd><%= @item.collected %></dd>
+  <dt>Project:</dt>
+  <dd><%= @item.project_id %></dd>
+</dl>
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

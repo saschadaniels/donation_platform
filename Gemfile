@@ -57,3 +57,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap'
 gem 'bootstrap_views_generator'
 gem 'simple_form'
+gem 'rails-erd'

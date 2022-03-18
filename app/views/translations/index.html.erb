@@ -1,0 +1,28 @@
+<h1>Translations</h1>
+
+<table class="table table-striped table-hover table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Item</th>
+      <th colspan="3" scope="col"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @translations.each do |translation| %>
+      <tr>
+        <td><%= translation.name %></td>
+        <td><%= translation.description %></td>
+        <td><%= translation.item_id %></td>
+        <td><%= link_to 'Show', translation %></td>
+        <td><%= link_to 'Edit', edit_translation_path(translation) %></td>
+        <td><%= link_to 'Destroy', translation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= link_to 'New Translation', new_translation_path %>

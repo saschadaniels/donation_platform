@@ -1,0 +1,12 @@
+<h1>Translations</h1>
+
+<dl>
+  <dt>Name:</dt>
+  <dd><%= @translation.name %></dd>
+  <dt>Description:</dt>
+  <dd><%= @translation.description %></dd>
+  <dt>Item:</dt>
+  <dd><%= @translation.item_id %></dd>
+</dl>
+<%= link_to 'Edit', edit_translation_path(@translation) %> |
+<%= link_to 'Back', translations_path %>

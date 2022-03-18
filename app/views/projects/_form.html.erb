@@ -1,0 +1,14 @@
+
+<%= simple_form_for(@project) do |f| %>
+  <%= errors_for(@project) %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :location_id %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: 'btn-primary' %>
+  </div>
+<% end %>

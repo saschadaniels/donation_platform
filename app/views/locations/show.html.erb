@@ -1,0 +1,12 @@
+<h1>Locations</h1>
+
+<dl>
+  <dt>Name:</dt>
+  <dd><%= @location.name %></dd>
+  <dt>Address:</dt>
+  <dd><%= @location.address %></dd>
+  <dt>Contact data:</dt>
+  <dd><%= @location.contact_data %></dd>
+</dl>
+<%= link_to 'Edit', edit_location_path(@location) %> |
+<%= link_to 'Back', locations_path %>

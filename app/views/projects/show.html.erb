@@ -1,0 +1,12 @@
+<h1>Projects</h1>
+
+<dl>
+  <dt>Name:</dt>
+  <dd><%= @project.name %></dd>
+  <dt>Description:</dt>
+  <dd><%= @project.description %></dd>
+  <dt>Location:</dt>
+  <dd><%= @project.location_id %></dd>
+</dl>
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
